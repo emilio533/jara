@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tienda online de productos militares" />
+    <meta name="theme-color" content="#1b263b" />
+
+    <title>Tienda Militar - Tienda Online</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Librerías externas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>🪖 JARA STORE</h1>
+      <div class="btn-group">
+        <button title="Cambiar tema" data-action="toggle-dark">🌙</button>
+        <button title="Abrir carrito" data-action="toggle-cart">
+          🛒 <span id="contador">0</span>
+        </button>
+        <button title="Generar factura PDF" data-action="generate-factura">
+          📄 Factura
+        </button>
+        <button title="Panel de administración" data-action="login-admin">👤 Admin</button>
+      </div>
+    </header>
+
+    <!-- BARRA DE BÚSQUEDA Y FILTROS -->
+    <div class="toolbar">
+      <input
+        type="text"
+        id="buscar"
+        placeholder="Buscar productos..."
+        onkeyup="filtrar()"
+      />
+      <select id="categoria" onchange="filtrar()">
+        <option value="">Todas las categorías</option>
+        <option value="Botas">Botas</option>
+        <option value="Uniformes">Uniformes</option>
+        <option value="Accesorios">Accesorios</option>
+      </select>
+    </div>
+
+    <!-- CONTENEDOR DE PRODUCTOS -->
+    <div class="container" id="productos"></div>
+
+    <!-- MODAL DEL CARRITO -->
+    <div class="modal" id="modal">
+      <h3>🛒 Carrito de Compras</h3>
+      <div id="lista"></div>
+      <div class="total">Total: $ <span id="total">0</span></div>
+      <button data-action="generate-factura">💾 Generar Factura</button>
+      <button data-action="pay-whatsapp">💬 Comprar por WhatsApp</button>
+      <button data-action="pay-nequi">💳 Pagar con Nequi</button>
+      <button data-action="pay-paypal">🅿️ Pagar con PayPal</button>
+    </div>
+
+    <!-- Scripts - Módulos Independientes -->
+    <!-- 1. Módulos de Datos -->
+    <script src="modules/productos.js"></script>
+    <script src="modules/carrito.js"></script>
+
+    <!-- 2. Módulos de Presentación -->
+    <script src="modules/ui.js"></script>
+    <script src="modules/tema.js"></script>
+
+    <!-- 3. Módulos de Lógica de Negocio -->
+    <script src="modules/tienda.js"></script>
+    <script src="modules/admin.js"></script>
+    <script src="modules/pagos.js"></script>
+
+    <!-- 4. Orquestador Principal -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Panel Administrativo - Tienda Militar" />
+    <meta name="theme-color" content="#1b263b" />
+
+    <title>Panel Administrativo - JARA STORE</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Librerías externas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>🪖 JARA STORE - Panel Administrativo</h1>
+      <div class="btn-group">
+        <button title="Cambiar tema" data-action="toggle-dark">🌙</button>
+        <button title="Volver a la tienda" onclick="window.location.href='index.html'">🏠 Tienda</button>
+      </div>
+    </header>
+
+    <!-- PANEL DE ADMINISTRACIÓN -->
+    <div class="admin active" id="admin">
+      <h4>⚙️ Panel Administrativo</h4>
+      <input id="n" placeholder="Nombre del producto" />
+      <input id="p" placeholder="Precio" type="number" />
+      <input id="i" placeholder="URL de imagen" />
+      <select id="c">
+        <option value="Botas">Botas</option>
+        <option value="Uniformes">Uniformes</option>
+        <option value="Accesorios">Accesorios</option>
+      </select>
+      <input id="s" placeholder="Stock" type="number" />
+      <button data-action="add-product">➕ Agregar Producto</button>
+      <hr />
+      <button data-action="view-sales">📊 Ver Ventas</button>
+      <div id="ventas"></div>
+    </div>
+
+    <!-- Scripts - Módulos Independientes -->
+    <!-- 1. Módulos de Datos -->
+    <script src="modules/productos.js"></script>
+    <script src="modules/carrito.js"></script>
+
+    <!-- 2. Módulos de Presentación -->
+    <script src="modules/ui.js"></script>
+    <script src="modules/tema.js"></script>
+
+    <!-- 3. Módulos de Lógica de Negocio -->
+    <script src="modules/tienda.js"></script>
+    <script src="modules/admin.js"></script>
+    <script src="modules/pagos.js"></script>
+
+    <!-- 4. Orquestador Principal para Admin -->
+    <script src="admin-app.js"></script>
+  </body>
+</html></content>
+<parameter name="filePath">/home/jodete/Escritorio/jara/admin.html

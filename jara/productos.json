@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Botas Tácticas Negras",
+    "precio": 150000,
+    "imagen": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
+    "categoria": "Botas",
+    "stock": 5,
+    "descripcion": "Botas tácticas resistentes y cómodas para operaciones militares"
+  },
+  {
+    "id": 2,
+    "nombre": "Uniforme Camuflaje Desert",
+    "precio": 250000,
+    "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
+    "categoria": "Uniformes",
+    "stock": 8,
+    "descripcion": "Uniforme camuflaje de alta calidad con diseño desert"
+  },
+  {
+    "id": 3,
+    "nombre": "Casco Militar Táctico",
+    "precio": 80000,
+    "imagen": "https://images.unsplash.com/photo-1589884201200-dbf95b16b10e?w=400&h=400&fit=crop",
+    "categoria": "Accesorios",
+    "stock": 12,
+    "descripcion": "Casco táctico ligero con protección avanzada"
+  },
+  {
+    "id": 4,
+    "nombre": "Chaleco Táctico",
+    "precio": 320000,
+    "imagen": "https://images.unsplash.com/photo-1579783902614-e3fb5141b0cb?w=400&h=400&fit=crop",
+    "categoria": "Uniformes",
+    "stock": 6,
+    "descripcion": "Chaleco táctico con múltiples compartimentos de almacenamiento"
+  },
+  {
+    "id": 5,
+    "nombre": "Botas de Combate",
+    "precio": 180000,
+    "imagen": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=400&fit=crop",
+    "categoria": "Botas",
+    "stock": 10,
+    "descripcion": "Botas de combate profesionales con suela antideslizante"
+  },
+  {
+    "id": 6,
+    "nombre": "Mochila Táctica 40L",
+    "precio": 220000,
+    "imagen": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop",
+    "categoria": "Accesorios",
+    "stock": 7,
+    "descripcion": "Mochila táctica de gran capacidad para misiones largas"
+  },
+  {
+    "id": 7,
+    "nombre": "Uniforme Camuflaje Urbano",
+    "precio": 280000,
+    "imagen": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=400&h=400&fit=crop",
+    "categoria": "Uniformes",
+    "stock": 9,
+    "descripcion": "Uniforme camuflaje urbano moderno y versátil"
+  },
+  {
+    "id": 8,
+    "nombre": "Cinturón Táctico",
+    "precio": 55000,
+    "imagen": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop",
+    "categoria": "Accesorios",
+    "stock": 15,
+    "descripcion": "Cinturón táctico reforzado con hebilla de seguridad"
+  }
+]
